@@ -1,45 +1,84 @@
-body{
-    margin:20px;
-    background-image: url(./surveybg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
+    margin: 20px;
+    background-color: seagreen;
 }
-div{
-    text-align: center;
-}
-.section{
+
+.section {
     text-align: left;
 }
-.information{
+
+.information {
     text-align: center;
-    font-size: 20px;
 }
-.box{
+
+.box {
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-color: aqua;
 }
-table{
-    width:80%;
+
+table {
+    width: 80%;
 }
-.point{
-    font-size: 20px;
-}
-td,th{
+
+td,
+th {
     border-bottom: 10px;
     text-align: center;
     padding: 10px;
 }
-.but{
+
+.but {
     text-align: center;
 }
-button{
+
+button {
     width: 150px;
     padding: 10px;
-    border: 0;
+    border: 20px;
     border-radius: 12px;
+    border-color: white;
     font-size: 15px;
     font-weight: 40px;
-    background-color:  #e6a210;
-    color:white;
+    background-color: #e6a210;
+    color: white;
+}
+
+@media (max-width:1200px) {
+
+    .information,
+    .point,
+    header {
+        font-size: 1rem;
+    }
+
+    body {
+        background-color: rgb(242, 255, 0);
+    }
+}
+
+@media (min-width:1200px) and (max-width:1500px) {
+
+    .information,
+    .point,
+    header {
+        font-size: 1.5rem;
+    }
+
+    body {
+        background-color: blueviolet;
+    }
+}
+
+@media (min-width:1500px) {
+
+    .information,
+    .point,
+    header {
+        font-size: 2rem;
+    }
+
+    body {
+        background-color: rgb(43, 226, 220);
+    }
 }
